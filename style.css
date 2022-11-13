@@ -106,6 +106,27 @@ img{
    height: 100%;
 }
 
+.questions{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin: 5px;
+}
+
+.questions>div{
+   width: 48%;
+   text-align: center;
+   word-spacing: 4px;
+   border: 5px solid black;
+   padding: 10px;
+}
+
+.questions>div>img{
+   width: 100%;
+   overflow: hidden;
+}
+
 .end{
    width:100%;
    padding: 10px;
