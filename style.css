@@ -140,6 +140,46 @@ img{
    margin: 15px;
 }
 
+.mainquiz{
+   display:flex;
+   justify-content: space-evenly;
+}
+.mainquiz>div{
+   background-color:darkblue;
+   border:5px solid black;
+   padding:15px;
+   width: 30%;
+   text-align: center;
+}
+
+form>input{
+   display:block;
+   margin-top:5px;
+   padding:0px;
+   font-weight: bold;
+   background-color: lightgrey;
+   width: 100%;
+   text-align: center;
+}
+.wrong{
+   font-weight: 1000;
+   background-color: hotpink;
+}
+.formclass{
+   display:none;
+}
+.right{
+   font-weight:1000;
+   background-color:mediumspringgreen;
+}
+.info, .info2, .info3{
+   margin-top: 20px;
+}
+
+.empty, .empty2, .empty3{
+   font-size:100px;
+}
+
 @media screen and (max-width: 900px){
    .intro{
       flex-direction: column;
@@ -155,6 +195,13 @@ img{
       width: 100%;
       margin: 10px;
    }
+   .questions{
+      flex-direction: column;
+   }
+   .questions>div{
+      width: 100%;
+      margin: 10px;
+   }
 }
 
 @media screen and (max-width: 800px){
@@ -165,7 +212,14 @@ img{
       width:100%;
       margin: 10px;
    }
-
+   .mainquiz{
+      background-color: thistle;
+      flex-direction:column;
+  }
+  .mainquiz>div{
+      margin:0 auto;
+      margin-top:10px;
+  }
 }
 
 @media screen and (max-width: 600px){
